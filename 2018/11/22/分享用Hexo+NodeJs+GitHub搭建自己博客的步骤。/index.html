@@ -10,7 +10,7 @@
 		
 
 <head><meta name="generator" content="Hexo 3.8.0">
-	<title>Hello World</title>
+	<title>分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="apple-mobile-web-app-title" content="Amaze UI">
@@ -54,7 +54,7 @@
 		
 		
 			
-			<p class="page-name">当前文章&nbsp;:&nbsp;《Hello World》</p>
+			<p class="page-name">当前文章&nbsp;:&nbsp;《分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。》</p>
 			
 		
 	
@@ -160,8 +160,8 @@
 					
 					
 	
-		<a href="/2018/11/21/hello-world/" itemprop="url">		
-			Hello World		
+		<a href="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/" itemprop="url">		
+			分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。		
 		</a>
 	
 
@@ -170,9 +170,9 @@
 				<p class="am-article-meta blog-text-center">
 					<span>
 						<i class="fa fa-clock-o"></i> 
-						<a href="/2018/11/21/hello-world/" itemprop="url">
-	<time datetime="2018-11-21T07:25:24.480Z" itemprop="datePublished">
-  		2018-11-21
+						<a href="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/" itemprop="url">
+	<time datetime="2018-11-22T06:11:51.000Z" itemprop="datePublished">
+  		2018-11-22
   </time>
 </a>    
 &nbsp;
@@ -187,16 +187,59 @@
 			<div class="am-article-bd">
 				<div class="content" id="post-content">
 					
-						<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><p>kknjkjkmlkmk</p>
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+						<p>在安装Hexo之前，你必须安装这两个应用：</p>
+<p>\1.      Node.Js  链接：<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">http://nodejs.cn/download/</a> 傻瓜式安装。</p>
+<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/D:/MyBolg\source\_posts\分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。\01.png" alt="01"></p>
+<p>这一步选第四个表示自动配置环境变量。（这个截图是网上找的因为我自己安装时没有截图）</p>
+<p>\2.      Git      链接<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">https://git-scm.com/download/win</a> 进入这个页面会弹出一个下载框。安装也是一路点Next。</p>
+<p>Win+R 输出cmd进入命令行 ，成功界面如下：</p>
+<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/D:/MyBolg\source\_posts\分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。\02.png" alt="02"></p>
+<p> <img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/D:/MyBolg\source\_posts\分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。\03.png" alt="03"></p>
+<p>现在开始安装Hexo：</p>
+<p>\1.      首先在自己电脑上创建一个文件夹用于存放Hexo。</p>
+<p>\2.      打开git-base快捷方式。也可以在桌面鼠标右键选git-base（如果没有则安装有问题）</p>
+<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/D:/MyBolg\source\_posts\分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。\clip_image001.png" alt="clip_image001"></p>
+<p>\1.      输入cd 文件下路径</p>
+<p>\2.      输出npm install -g hexo-cli     一键安装Hexo</p>
+<p>\3.      输入hexo -v，检查hexo是否安装成功</p>
+<p>\4.      输出 hexo init 初始化  （等待一会儿会看到 INFO “Start blogging with Hexo！”   完成！ 此时可以在刚才文件夹中看到生成的文件）</p>
+<p>\5.      输入npm install，安装所需要的组件</p>
+<p>\6.      输入hexo g，首次体验Hexo</p>
+<p>\7.       输入hexo s，开启服务器，访问该网址（一般是localhost：4000），正式体验Hexo。出现下图就是成功了</p>
+<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/D:/MyBolg\source\_posts\分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。\clip_image003.png" alt="clip_image003"></p>
+<p>最后一步 ，把博客放到GitHub上。</p>
+<p>\1.      访问 <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a>  创建账号 登录。创建存储库：</p>
+<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/D:/MyBolg\source\_posts\分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。\clip_image004.png" alt="clip_image004"></p>
+<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/D:/MyBolg\source\_posts\分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。\clip_image006.png" alt="clip_image006"></p>
+<p>这里要注意，命名一定要是这个格式，这将是你之后的博客访问地址。因为我已经创建过这个了所以这里显示错误。</p>
+<p>\2.      回到gitbash中，</p>
+<p>\3.      输入npm install hexo-deployer-git –save 这样才能将你的文章发布到GitHub上。</p>
+<p>\4.      配置github账户信息（YourName和YourEail都替换成你自己的）</p>
+<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/D:/MyBolg\source\_posts\分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。\clip_image008.png" alt="clip_image008"></p>
+<p>\5.      输入 ssh-keygen -t rsa -C “<a href="mailto:youremail@example.com" target="_blank" rel="noopener">youremail@example.com</a> 生成SSH</p>
+<p>\6.      通过如下指令获取 id_rsa.pub文件的内容，也就是ssh密匙。（一般这个文件生成在C盘用户组，也可以手动打开文件复制）</p>
+<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/D:/MyBolg\source\_posts\分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。\clip_image009.png" alt="clip_image009"></p>
+<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/D:/MyBolg\source\_posts\分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。\clip_image012.jpg" alt="clip_image012"></p>
+<p>\7.      将复制的文件放在这里</p>
+<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/D:/MyBolg\source\_posts\分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。\clip_image014.jpg" alt="clip_image014"></p>
+<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/D:/MyBolg\source\_posts\分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。\clip_image015.png" alt="clip_image015"></p>
+<p>\8.      输入ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a> 测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了。</p>
+<p>\9.      执行以下命令（建议每次都按照如下步骤进行部署）</p>
+<p>hexo clean</p>
+<p>hexo generate</p>
+<p>hexo deploy</p>
+<p>可简写为</p>
+<p>hexo c</p>
+<p>hexo g</p>
+<p>hexo d</p>
+<p>最后看到   INFO  Deploy done: git</p>
+<p>就ok了。</p>
+<blockquote>
+<p><strong>建议</strong>：在使用命令 <code>hexo g</code> 部署之后，可以先使用 <code>hexo s</code> 运行本地站点，在浏览器输入地址<a href="http://lacolhost:4000/" target="_blank" rel="noopener">http://lacolhost:4000/</a>查看运行结果，检查没有错误后再使用命令 <code>hexo d</code> 发布</p>
+</blockquote>
+<p>此时打开浏览器<a href="http://你的用户名.github.io" target="_blank" rel="noopener">http://你的用户名.github.io</a>就可以访问你的博客了。</p>
+<p><em>比如我的是：&lt;<a href="https://ekkozhu.github.io/" target="_blank" rel="noopener">https://ekkozhu.github.io/</a></em>&gt;</p>
+<p>至此，个人博客搭建完成，后续的一些主题优化、插件配置等就需要自己进一步研究了，本人也是这两天接触到这个，写下这个过程跟大家分享，如果文中有错误之处，还请指出。我的qq：651610129</p>
 
 					
 				</div>
@@ -205,13 +248,13 @@
 
 		<ul class="am-pagination">
     
-    	<li class="am-pagination-prev">
-   		<a class="pull-left" href="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/" title="分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。">
-      		&laquo; 上一篇
+	
+		<li class="am-pagination-next">
+		<a class="pull-right" href="/2018/11/21/hello-world/" title="Hello World">
+			下一篇 &raquo;
 		</a>
 		</li>
-	
-	
+	 
  </ul>
         
 
@@ -291,18 +334,6 @@
 	描述：The TOC module refers to 'https://github.com/codefine/hexo-theme-mellow', include toc.ejs、toc.js、toc.css. All rights reserved by codefine. 
 -->
 
-	
-		<aside class="post-widget">
-			<nav class="post-toc-wrap" id="post-toc">
-				
-					<strong>文章目录</strong>
-				
-				
-				<!--toc(post.content)-->
-				<ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Quick-Start"><span class="post-toc-text">Quick Start</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Create-a-new-post"><span class="post-toc-text">Create a new post</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Run-server"><span class="post-toc-text">Run server</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Generate-static-files"><span class="post-toc-text">Generate static files</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Deploy-to-remote-sites"><span class="post-toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
-			</nav>
-			<div class="post-toc-bar"><div>
-		</div></div></aside>
 	
 
 	</div>
