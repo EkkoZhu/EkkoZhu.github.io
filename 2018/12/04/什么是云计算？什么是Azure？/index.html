@@ -10,7 +10,7 @@
 		
 
 <head><meta name="generator" content="Hexo 3.8.0">
-	<title>分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。</title>
+	<title>什么是云计算？什么是Azure？</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="apple-mobile-web-app-title" content="Amaze UI">
@@ -54,7 +54,7 @@
 		
 		
 			
-			<p class="page-name">当前文章&nbsp;:&nbsp;《分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。》</p>
+			<p class="page-name">当前文章&nbsp;:&nbsp;《什么是云计算？什么是Azure？》</p>
 			
 		
 	
@@ -160,8 +160,8 @@
 					
 					
 	
-		<a href="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/" itemprop="url">		
-			分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。		
+		<a href="/2018/12/04/什么是云计算？什么是Azure？/" itemprop="url">		
+			什么是云计算？什么是Azure？		
 		</a>
 	
 
@@ -170,15 +170,20 @@
 				<p class="am-article-meta blog-text-center">
 					<span>
 						<i class="fa fa-clock-o"></i> 
-						<a href="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/" itemprop="url">
-	<time datetime="2018-11-22T06:11:51.000Z" itemprop="datePublished">
-  		2018-11-22
+						<a href="/2018/12/04/什么是云计算？什么是Azure？/" itemprop="url">
+	<time datetime="2018-12-04T05:54:53.000Z" itemprop="datePublished">
+  		2018-12-04
   </time>
 </a>    
 &nbsp;
 					</span>
 					
 					<span>						
+						
+							<i class="fa fa-tags"></i>
+							
+								<a href="#Azure" title="Azure" rel="1">Azure</a>&nbsp;
+													 											
 						
 					</span>
 				</p>
@@ -187,60 +192,32 @@
 			<div class="am-article-bd">
 				<div class="content" id="post-content">
 					
-						<p>前言：这两天刚接触到这种搭建博客的方式，看完这篇文章，相信你也可以用Hexo+NodeJs+GitHub简单快速的搭建一个自己的博客。</p>
-<p>在安装Hexo之前，你必须安装这两个应用：</p>
-<p>\1.      Node.Js  链接：<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">http://nodejs.cn/download/</a> 傻瓜式安装。</p>
-<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/01.png" alt="01"></p>
-<p>这一步选第四个表示自动配置环境变量。（这个截图是网上找的因为我自己安装时没有截图）</p>
-<p>\2.      Git      链接<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">https://git-scm.com/download/win</a> 进入这个页面会弹出一个下载框。安装也是一路点Next。</p>
-<p>Win+R 输出cmd进入命令行 ，成功界面如下：</p>
-<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/02.png" alt="02"></p>
-<p> <img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/03.png" alt="03"></p>
-<p>现在开始安装Hexo：</p>
-<p>\1.      首先在自己电脑上创建一个文件夹用于存放Hexo。</p>
-<p>\2.      打开git-base快捷方式。也可以在桌面鼠标右键选git-base（如果没有则安装有问题）</p>
-<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/clip_image002.jpg" alt="clip_image002"></p>
-<p>\1.      输入cd 文件下路径</p>
-<p>\2.      输出npm install -g hexo-cli     一键安装Hexo</p>
-<p>\3.      输入hexo -v，检查hexo是否安装成功</p>
-<p>\4.      输出 hexo init 初始化  （等待一会儿会看到 INFO “Start blogging with Hexo！”   完成！ 此时可以在刚才文件夹中看到生成的文件）</p>
-<p>\5.      输入npm install，安装所需要的组件</p>
-<p>\6.      输入hexo g，首次体验Hexo</p>
-<p>\7.       输入hexo s，开启服务器，访问该网址（一般是localhost：4000），正式体验Hexo。出现下图就是成功了</p>
-<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/clip_image003.png" alt="clip_image003"></p>
-<p>最后一步 ，把博客放到GitHub上。</p>
-<p>\1.      访问 <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a>  创建账号 登录。创建存储库：</p>
-<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/clip_image004.png" alt="clip_image004"></p>
-<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/clip_image006.png" alt="clip_image006"></p>
-<p>这里要注意，命名一定要是这个格式，这将是你之后的博客访问地址。因为我已经创建过这个了所以这里显示错误。</p>
-<p>\2.      回到gitbash中，</p>
-<p>\3.      输入npm install hexo-deployer-git –save 这样才能将你的文章发布到GitHub上。</p>
-<p>\4.      配置github账户信息（YourName和YourEail都替换成你自己的）</p>
-<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/clip_image008.png" alt="clip_image008"></p>
-<p>\5.      输入 ssh-keygen -t rsa -C “<a href="mailto:youremail@example.com" target="_blank" rel="noopener">youremail@example.com</a> 生成SSH</p>
-<p>\6.      通过如下指令获取 id_rsa.pub文件的内容，也就是ssh密匙。（一般这个文件生成在C盘用户组，也可以手动打开文件复制）</p>
-<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/clip_image009.png" alt="clip_image009"></p>
-<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/clip_image012.jpg" alt="clip_image012"></p>
-<p>\7.      将复制的文件放在这里</p>
-<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/clip_image014.jpg" alt="clip_image014"></p>
-<p><img src="/2018/11/22/分享用Hexo+NodeJs+GitHub搭建自己博客的步骤。/clip_image016.jpg" alt="clip_image016"></p>
-<p>\8.      输入ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a> 测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了。</p>
-<p>\9.      执行以下命令（建议每次都按照如下步骤进行部署）</p>
-<p>hexo clean</p>
-<p>hexo generate</p>
-<p>hexo deploy</p>
-<p>可简写为</p>
-<p>hexo c</p>
-<p>hexo g</p>
-<p>hexo d</p>
-<p>最后看到   INFO  Deploy done: git</p>
-<p>就ok了。</p>
-<blockquote>
-<p><strong>建议</strong>：在使用命令 <code>hexo g</code> 部署之后，可以先使用 <code>hexo s</code> 运行本地站点，在浏览器输入地址<a href="http://lacolhost:4000/" target="_blank" rel="noopener">http://lacolhost:4000/</a>查看运行结果，检查没有错误后再使用命令 <code>hexo d</code> 发布</p>
-</blockquote>
-<p>此时打开浏览器<a href="http://你的用户名.github.io" target="_blank" rel="noopener">http://你的用户名.github.io</a>就可以访问你的博客了。</p>
-<p><em>比如我的是：&lt;<a href="https://ekkozhu.github.io/" target="_blank" rel="noopener">https://ekkozhu.github.io/</a></em>&gt;</p>
-<p>至此，个人博客搭建完成，后续的一些主题优化、插件配置等就需要自己进一步研究了，本人也是这两天接触到这个，写下这个过程跟大家分享，如果文中有错误之处，还请指出。我的qq：651610129</p>
+						<p><strong>什么是云计算？</strong></p>
+<p>简单地说，云计算就是计算服务的提供（服务器、存储、数据库、网络、软件、分析、智能等）- 通过 Internet（云）提供快速创新、弹性资源和规模经济。对于云服务，通常你只需使用多少支付多少，从而帮助降低运营成本，使基础设施更有效地运行，并能根据业务需求的变化调整对服务的使用。</p>
+<p>个人认为云计算就是要将IT服务变得像用电一样简单。云计算提供商集中管理软件和硬件，使用者能够在任何地方随时调用资源，用完之后及时释放以提供再分配，从何避免资源浪费，降低IT运作成本。企业可以将有限的资源和人力用于扩展业务、提升核心竞争力。</p>
+<p><img src="/2018/12/04/什么是云计算？什么是Azure？/微信图片_20181204152755.png" alt="微信图片_20181204152755"></p>
+<p><strong>云计算的类型</strong></p>
+<p>根据部署模型的不同，云计算大体分为三类：</p>
+<p><strong>公有云：</strong></p>
+<p>Microsoft Azure 是公有云的一个示例。在公有云中，所有硬件、软件和其他支持性基础结构均为云提供商所拥有和管理。使用 Web 浏览器访问这些服务和管理你的帐户。</p>
+<p><strong>私有云：</strong></p>
+<p>私有云是指专供一个企业或组织使用的云计算资源。私有云可以实际位于公司的现场数据中心之上。某些公司还向第三方服务提供商付费托管其私有云。在私有云中，在专用网络上维护服务和基础结构。</p>
+<p><strong>混合云：</strong></p>
+<p>混合云组合了公有云和私有云，通过允许在这二者之间共享数据和应用程序的技术将它们绑定到一起。混合云允许数据和应用程序在私有云和公共云之间移动，使你能够更灵活地处理业务并提供更多部署选项，有助于你优化现有基础结构、安全性和符合性。</p>
+<p><strong>云计算服务的分类</strong></p>
+<p>大多数云计算服务都可归为四大类：</p>
+<p>基础结构即服务 (IaaS)、平台即服务 (PaaS)、无服务器和软件即服务 (SaaS)。它们有时候称为云计算堆栈，因为它们互为构建基础。</p>
+<p><strong>基础结构即服务</strong> <strong>(IaaS)</strong></p>
+<p>云计算服务的最基本类别。使用 IaaS 时，你以即用即付的方式从服务提供商处租用 IT 基础结构，如服务器和虚拟机 (VM)、存储空间、网络和操作系统。若要了解更多信息，请参阅什么是 IaaS？</p>
+<p><strong>平台即服务</strong> <strong>(PaaS)</strong></p>
+<p>平台即服务 (PaaS) 是指云计算服务，它们可以按需提供开发、测试、交付和管理软件应用程序所需的环境。PaaS 旨在让开发人员能够更轻松地快速创建 Web 或移动应用，而无需考虑对开发所必需的服务器、存储空间、网络和数据库基础结构进行设置或管理。</p>
+<p><strong>无服务器计算</strong></p>
+<p>使用 PaaS 进行重叠，无服务器计算侧重于构建应用功能，无需花费时间继续管理要求管理的服务器和基础结构。云提供商可为你处理设置、容量规划和服务器管理。无服务器体系结构具有高度可缩放和事件驱动特点，且仅在出现特定函数或事件时才使用资源。</p>
+<p><strong>软件即服务</strong> <strong>(SaaS)</strong></p>
+<p>软件即服务 (SaaS) 是通过 Internet 交付软件应用程序的方法，通常以订阅为基础按需提供。使用 SaaS 时，云提供商托管并管理软件应用程序和基础结构，并负责软件升级和安全修补等维护工作。用户（通常使用电话、平板电脑或 PC 上的 Web 浏览器）通过 Internet 连接到应用程序。</p>
+<p><strong>Microsoft Azure</strong> <strong>是一个不断扩展的云服务集合，它可以帮助组织应对各种商业挑战。用户可使用个人喜欢的工具和框架，在大规模全球性网络上随心所欲地构建、管理和部署应用程序。</strong></p>
+<p>官网地址   <a href="https://azure.microsoft.com/zh-cn/" target="_blank" rel="noopener">https://azure.microsoft.com/zh-cn/</a></p>
+<p><img src="/2018/12/04/什么是云计算？什么是Azure？/微信图片_20181204152641.png" alt="微信图片_20181204152641"></p>
 
 					
 				</div>
@@ -249,13 +226,13 @@
 
 		<ul class="am-pagination">
     
-    	<li class="am-pagination-prev">
-   		<a class="pull-left" href="/2018/11/23/Azure上创建VM及安装SQL操作文档/" title="Azure上创建VM及安装SQL操作文档">
-      		&laquo; 上一篇
+	
+		<li class="am-pagination-next">
+		<a class="pull-right" href="/2018/12/04/Office-365-——-OneNote-使用心得/" title="Office 365 —— OneNote 使用心得">
+			下一篇 &raquo;
 		</a>
 		</li>
-	
-	
+	 
  </ul>
         
 
